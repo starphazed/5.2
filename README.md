@@ -1,19 +1,19 @@
-# Planet Generator API
+Planet Generator API
 
-## Overview
+Overview
 
 The **Planet Generator API** generates fictional planets with customizable features, inspired by real celestial bodies or entirely randomized. Customize planets based on age, size, terrain, climate, atmosphere, and other unique features.
 
 
-## Endpoints
+Endpoints
 
-### 1. Generate a Planet Based on an Existing Planet and Feature
+1. Generate a Planet Based on an Existing Planet and Feature
 
 - **Endpoint**: `/generate`
 - **Parameters**:
   - `base` (optional): The base planet to use (e.g., `earth`, `mars`, `jupiter`).
   - `feature` (optional): A specific feature to emphasize (e.g., `terrain`, `atmosphere`).
-- **Example Query**:
+- **Example Query**: curl "https://five-2-71ex.onrender.com/generate?base=earth&feature=terrain"
 
 - **Description of Results**:
 - Returns a fictionalized planet based on the selected base planet, with an emphasis on the specified feature.
@@ -31,12 +31,12 @@ The **Planet Generator API** generates fictional planets with customizable featu
 
 ---
 
-### 2. Customize a Planet by Specific Feature Emphasis
+2. Customize a Planet by Specific Feature Emphasis
 
 - **Endpoint**: `/generate`
 - **Parameters**:
 - `feature` (optional): A feature to emphasize in the planet’s creation, such as `terrain`, `climate`, or `atmosphere`.
-- **Example Query**:
+- **Example Query**:curl "https://five-2-71ex.onrender.com/generate?feature=atmosphere"
 
 - **Description of Results**:
 - Generates a planet with a unique or random feature focus, with random values for other attributes.
@@ -53,7 +53,7 @@ The **Planet Generator API** generates fictional planets with customizable featu
 
 ---
 
-### 3. Generate a Planet with Specific Age, Base, and Size
+3. Generate a Planet with Specific Age, Base, and Size
 
 - **Endpoint**: `/planet/:age`
 - **Path Parameter**:
@@ -61,7 +61,7 @@ The **Planet Generator API** generates fictional planets with customizable featu
 - **Query Parameters**:
 - `base` (optional): The base planet to use as inspiration (e.g., `mars`, `jupiter`).
 - `size` (optional): Specify the size of the planet (`small`, `medium`, `large`).
-- **Example Query**:
+- **Example Query**:curl "https://five-2-71ex.onrender.com/planet/4.5?base=mars&size=large"
 
 - **Description of Results**:
 - Generates a planet inspired by the specified base with specific age and size characteristics.
@@ -79,11 +79,11 @@ The **Planet Generator API** generates fictional planets with customizable featu
 
 ---
 
-### Random Planet Generation
+Random Planet Generation
 
 If no parameters are specified, the API generates a fully randomized planet.
 
-- **Example Query**:
+- **Example Query**:curl "https://five-2-71ex.onrender.com/generate"
 - **Example Result**:
 ```
 {
@@ -99,18 +99,18 @@ If no parameters are specified, the API generates a fully randomized planet.
 
 ---
 
-## Example Queries
+Example Queries
 
-1. **Generate a Small, Cold Planet with Desert Terrain**:
+1. **Generate a Small, Cold Planet with Desert Terrain**: curl "https://five-2-71ex.onrender.com/generate?size=small&climate=cold&terrain=desert-like"
 
-2. **Generate a Planet with a Unique Atmosphere and Rings**:
+2. **Generate a Planet with a Unique Atmosphere and Rings**: curl "https://five-2-71ex.onrender.com/generate?feature=atmosphere&moons=one tidal-locked moon"
 
-3. **Generate a Randomized Planet**:
+3. **Generate a Randomized Planet**: curl "https://five-2-71ex.onrender.com/generate"
 
    
 ---
 
-## Descriptions of Results
+Descriptions of Results
 
 - **Base Planet Features**: Returns data inspired by real planets like Earth, Mars, and Jupiter, with enhancements based on input parameters.
 - **Randomized Elements**: If no `base` planet is specified, a fictional planet is generated with features like "mushroom forests" or "dense fog of glowing spores" for a unique result.
