@@ -123,6 +123,18 @@
       { "quantity": "an orbiting asteroid belt", "description": "A ring of asteroids that cast shadows and reflect light onto the planet." },
       { "quantity": "one tidal-locked moon", "description": "A single moon, always showing the same face to the planet." },
       { "quantity": "a cluster of small rocky bodies", "description": "Numerous tiny rocky moons that form a unique constellation in the sky." }
-    ]
+    ],
+    "namePrefixes": [
+      "Zor", "Xen", "Bel", "Thal", "Ory", "Xal", "Vor", "Nyx", "Ser", "Ael",
+      "Lum", "Vex", "Qua", "Sol", "Kri", "Yor", "Maz", "Cel", "Drak", "Fen",
+      "Tor", "Bri", "Myth", "Ska", "Gly", "Exo", "Pla", "Mira", "Neb", "Orl",
+      "Lyr", "Astra", "Lyra", "Vira", "Echo", "Cyra", "Zyn", "Thyr", "Arc"
+  ],
+  "nameSuffixes": [
+      "ar", "on", "ix", "ara", "us", "ium", "ora", "el", "ex", "is", "yx",
+      "ra", "mos", "an", "eth", "en", "or", "oth", "ian", "iel", "eus",
+      "aal", "ira", "orn", "ary", "ial", "aar", "une", "ion", "yra", "tar",
+      "yss", "ora", "eros", "ith", "eus", "ian", "aur", "aal", "yne", "tur"
+  ]
   }
 }
