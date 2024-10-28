@@ -1,0 +1,129 @@
+{
+    "basePlanets": {
+      "mercury": {
+        "gravity": "3.7 m/s²",
+        "terrain": ["rocky plains", "craters", "scarps"],
+        "climate": "extremely hot on the sun-facing side and freezing on the dark side",
+        "temperatureRange": "-173°C to 427°C",
+        "atmosphere": ["oxygen", "sodium", "hydrogen", "helium", "potassium"],
+        "dominantFeatures": ["Caloris Basin", "giant cliffs formed by planetary shrinkage"],
+        "phenomena": ["intense solar radiation", "extreme day-night temperature variation"],
+        "moons": 0
+      },
+      "venus": {
+        "gravity": "8.9 m/s²",
+        "terrain": ["volcanoes", "vast plains", "mountain ranges"],
+        "climate": "thick greenhouse effect with constant sulfuric acid clouds",
+        "temperatureRange": "462°C (constant)",
+        "atmosphere": ["carbon dioxide", "nitrogen", "sulfur dioxide"],
+        "dominantFeatures": ["Maxwell Montes", "lava flows", "cratered plains"],
+        "phenomena": ["perpetual lightning storms", "high surface pressure (92x Earth)"],
+        "moons": 0
+      },
+      "earth": {
+        "gravity": "9.8 m/s²",
+        "terrain": ["oceans", "mountains", "forests", "deserts", "plains"],
+        "climate": "temperate with seasons, varying from tropical to polar",
+        "temperatureRange": "-88°C to 58°C",
+        "atmosphere": ["nitrogen", "oxygen", "argon", "trace gases"],
+        "dominantFeatures": ["oceans covering 70% of surface", "diverse ecosystems"],
+        "phenomena": ["auroras", "hurricanes", "volcanic activity"],
+        "moons": 1
+      },
+      "mars": {
+        "gravity": "3.7 m/s²",
+        "terrain": ["rocky deserts", "volcanoes", "canyons", "polar ice caps"],
+        "climate": "cold and dry, frequent dust storms",
+        "temperatureRange": "-125°C to 20°C",
+        "atmosphere": ["carbon dioxide", "argon", "nitrogen"],
+        "dominantFeatures": ["Olympus Mons", "Valles Marineris", "polar ice caps"],
+        "phenomena": ["planet-wide dust storms", "thin, almost transparent sky"],
+        "moons": 2
+      },
+      "jupiter": {
+        "gravity": "24.8 m/s²",
+        "terrain": ["gas clouds", "storm systems", "faint ring system"],
+        "climate": "extremely cold with violent storms",
+        "temperatureRange": "-108°C (average)",
+        "atmosphere": ["hydrogen", "helium", "trace methane", "ammonia"],
+        "dominantFeatures": ["Great Red Spot", "intense radiation belts"],
+        "phenomena": ["permanent giant storm", "intense radiation", "high-speed winds"],
+        "moons": 79
+      },
+      "saturn": {
+        "gravity": "10.4 m/s²",
+        "terrain": ["gas layers", "complex ring system of ice and rock"],
+        "climate": "cold with high wind speeds, atmospheric bands",
+        "temperatureRange": "-139°C (average)",
+        "atmosphere": ["hydrogen", "helium", "methane"],
+        "dominantFeatures": ["vast rings", "hexagonal polar storm"],
+        "phenomena": ["hexagonal jet stream at north pole", "beautiful ring reflections"],
+        "moons": 83
+      },
+      "uranus": {
+        "gravity": "8.7 m/s²",
+        "terrain": ["icy clouds", "methane haze"],
+        "climate": "frigid with high axial tilt, leading to extreme seasonal variations",
+        "temperatureRange": "-224°C (average)",
+        "atmosphere": ["hydrogen", "helium", "methane"],
+        "dominantFeatures": ["tilted axis", "faint ring system"],
+        "phenomena": ["magnetic poles at odd angles", "long seasons (21 years each)"],
+        "moons": 27
+      },
+      "neptune": {
+        "gravity": "11.2 m/s²",
+        "terrain": ["frozen clouds", "storm systems", "blue methane atmosphere"],
+        "climate": "extremely cold with supersonic winds",
+        "temperatureRange": "-214°C (average)",
+        "atmosphere": ["hydrogen", "helium", "methane"],
+        "dominantFeatures": ["Great Dark Spot", "violent wind patterns"],
+        "phenomena": ["supersonic winds", "large dark storms", "frozen ammonia clouds"],
+        "moons": 14
+      },
+      "pluto": {
+        "gravity": "0.62 m/s²",
+        "terrain": ["icy plains", "frozen mountains", "craters"],
+        "climate": "extremely cold, nitrogen ice covers much of the surface",
+        "temperatureRange": "-229°C (average)",
+        "atmosphere": ["nitrogen", "methane", "carbon monoxide"],
+        "dominantFeatures": ["Tombaugh Regio", "ice mountains"],
+        "phenomena": ["hazy atmosphere", "frozen nitrogen plains"],
+        "moons": 5
+      }
+    },
+    "randomElements": {
+      "terrain": [
+        { "name": "floating crystal islands", "description": "Islands suspended in the air by magnetic forces, shimmering under sunlight." },
+        { "name": "acidic seas", "description": "Vast seas filled with acidic liquids, dangerous for any organic life." },
+        { "name": "mushroom forests", "description": "Giant fungi forming dense forests with bioluminescent caps." },
+        { "name": "metallic plains", "description": "Wide-open plains with metallic ground, reflecting light like a mirror." },
+        { "name": "glass deserts", "description": "Expansive deserts of sand turned to glass, creating surreal reflections." },
+        { "name": "lava fields", "description": "Fields of flowing lava with rock islands scattered throughout." }
+      ],
+      "climate": [
+        { "type": "perpetual lightning storms", "description": "Endless storms that flash lightning in the sky, with no rain to quench the fire." },
+        { "type": "volcanic ash clouds", "description": "Thick clouds of ash filling the atmosphere, darkening the skies." },
+        { "type": "constant rainfall", "description": "Heavy, unceasing rain that has eroded the landscape into deep river channels." },
+        { "type": "scorching heat", "description": "An intense and dry heat that evaporates most liquids on the surface." },
+        { "type": "freezing winds", "description": "Icy winds blow constantly, forming frost over any exposed surface." },
+        { "type": "foggy with bioluminescent mist", "description": "A fog that glows with floating spores, lighting the landscape in eerie colors." }
+      ],
+      "atmosphere": [
+        { "composition": "methane with floating ice particles", "description": "A cold atmosphere where methane forms thin ice crystals that sparkle in the air." },
+        { "composition": "dense fog of glowing spores", "description": "A thick fog filled with spores that emit light, creating an otherworldly glow." },
+        { "composition": "poisonous sulfuric gas", "description": "A toxic atmosphere filled with sulfur, dangerous to breathe and corrosive." },
+        { "composition": "breathable nitrogen-oxygen mix", "description": "Similar to Earth, this atmosphere is breathable for humans." },
+        { "composition": "thin layer with reflective particles", "description": "A sparse atmosphere where reflective particles float, creating mirror-like effects." },
+        { "composition": "carbon monoxide with acidic vapors", "description": "A corrosive atmosphere that slowly eats away at anything exposed." }
+      ],
+      "moons": [
+        { "quantity": "two massive moons", "description": "Two large moons that dominate the night sky, each with distinct phases." },
+        { "quantity": "a ring of ice shards", "description": "A delicate ring system made up of countless icy fragments." },
+        { "quantity": "three irregularly shaped moons", "description": "Three oddly-shaped moons that orbit in unpredictable patterns." },
+        { "quantity": "an orbiting asteroid belt", "description": "A ring of asteroids that cast shadows and reflect light onto the planet." },
+        { "quantity": "one tidal-locked moon", "description": "A single moon, always showing the same face to the planet." },
+        { "quantity": "a cluster of small rocky bodies", "description": "Numerous tiny rocky moons that form a unique constellation in the sky." }
+      ]
+    }
+  }
+  
