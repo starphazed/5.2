@@ -4,10 +4,6 @@ import planetData from './planets.json' assert { type: 'json' };
 const app = express();
 const port = 3001;
 
-app.get('/', (req, res) => {
-    res.send("Welcome to the Planet Generator API! Use endpoints like /generate or /planet/:age to create custom planets.");
-});
-
 function generatePlanetName() {
     const prefixes = planetData.randomElements.namePrefixes;
     const suffixes = planetData.randomElements.nameSuffixes;
@@ -19,9 +15,14 @@ function generatePlanetName() {
 app.get('/generate', (req, res) => {
     const base = req.query.base;
     const feature = req.query.feature;
-    let generatedPlanet = {
-        name: generatePlanetName()
-    };
+    let generatedPlanet = { name: generatePlanetName() };
+
+    if (!base && !feature) {
+        Object.keys(planetData.randomElements).forEach(key => {
+            generatedPlanet[key] = planetData.randomElements[key][Math.floor(Math.random() * planetData.randomElements[key].length)].description;
+        });
+        return res.send(generatedPlanet);
+    }
 
     if (feature && !base) {
         if (planetData.randomElements[feature]) {
