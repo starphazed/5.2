@@ -1,7 +1,11 @@
 import express from 'express';
 import planetData from './planets.json' assert { type: 'json' };
+import cors from 'cors'
 
 const app = express();
+app.use(cors({
+    origin: '*'
+}));
 const port = 3001;
 
 function generatePlanetName() {
