@@ -8,6 +8,10 @@ app.use(cors({
 }));
 const port = 3001;
 
+app.get('/', (req, res) => {
+    res.send("Welcome to the Planet Generator API! Use endpoints like /generate or /planet/:age to create custom planets.");
+});
+
 function generatePlanetName() {
     const prefixes = planetData.randomElements.namePrefixes;
     const suffixes = planetData.randomElements.nameSuffixes;
