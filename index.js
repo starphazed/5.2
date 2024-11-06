@@ -1,6 +1,7 @@
 import express from 'express';
+import fs from 'fs/promises';
 import planetData from './planets.json' assert { type: 'json' };
-import cors from 'cors'
+import cors from 'cors';
 
 const app = express();
 app.use(cors({
